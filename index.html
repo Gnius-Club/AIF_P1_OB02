@@ -1,24 +1,244 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 2: ¡Convirtiéndonos en Programadores!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2: ¡Convirtiéndonos en Programadores!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Entender el concepto de <strong>secuencia</strong> a través del movimiento físico.</li>
+                                        <li>Comprender qué es un <strong>algoritmo</strong> usando la analogía de una "receta".</li>
+                                        <li>Aprender que el orden de las instrucciones es crucial para lograr un objetivo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡El Juego del Robot Humano:</strong> Experimentación física con secuencias y depuración.</li>
+                                        <li><strong class="tactic-highlight">⚡Creando un Baile Secreto:</strong> Creación de un algoritmo visual y colaborativo.</li>
+                                        <li><strong class="tactic-highlight">⚡Conectando la Magia:</strong> Vinculación de la actividad desconectada con la herramienta digital.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una "receta" de baile (algoritmo) dibujada en una hoja de papel grande, creada en equipo, que otro equipo pueda interpretar y ejecutar.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li><strong>Tarjetas de Flechas Gigantes:</strong> (Impresas o dibujadas en cartulina, unas 5 de cada una).<br>
+                                            - Flecha hacia Adelante (Avanzar un paso).<br>
+                                            - Flecha Girando a la Derecha (Girar en el sitio).<br>
+                                            - Flecha Girando a la Izquierda (Girar en el sitio).</li>
+                                        <li><strong>Objetos para "Destino":</strong> Un peluche, un cono, un libro especial, etc.</li>
+                                        <li><strong>Hojas de Papel Grandes o Pizarras Pequeñas</strong> para cada equipo.</li>
+                                        <li><strong>Crayones o Marcadores de colores.</strong></li>
+                                        <li><strong>Proyector</strong> con un dispositivo que tenga <strong>ScratchJr</strong> listo para mostrar al final.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Prepara el Espacio:</strong> Despeja un área amplia en el centro del salón para que los niños puedan moverse libremente y de forma segura.</li>
+                                        <li><strong>Define el Camino:</strong> Marca un "Punto de Inicio" (Punto A) y un "Punto de Destino" (Punto B) en el suelo con cinta adhesiva. Coloca el objeto "Destino" en el Punto B.</li>
+                                        <li><strong>Ten Listos los Materiales:</strong> Ten las tarjetas de flechas, las hojas y los marcadores a la mano.</li>
+                                        <li><strong>Prepara ScratchJr:</strong> Ten abierto un proyecto nuevo en ScratchJr en tu dispositivo, listo para proyectar en la última actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: El Juego del Robot Humano ⏰ 20 minutos</h2>
+                <p>Vivir y sentir en el cuerpo qué es una secuencia y por qué el orden es tan importante.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Misión del Robot ⏰ 5 minutos</h3>
+                            <p>(El facilitador reúne a los niños en el espacio abierto y les presenta el desafío con entusiasmo y una historia).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, equipo de Creadores! La semana pasada le dimos nuestro toque mágico a nuestro personaje en el taller digital. Pero antes de poder darle movimiento en la pantalla, tenemos que aprender a pensar... ¡como programadores! Y para eso, hoy ustedes mismos se convertirán en robots.</p>
+                                <p class="dialogue assistant">(Señala al niño/a más cercano y le habla con voz robótica y juguetona).</p>
+                                <p class="dialogue assistant">Bip-bop... Soy un robot. No puedo pensar por mí mismo. Solo puedo seguir instrucciones. ¡Necesito un programador que me guíe! Y hoy, ustedes serán tanto los robots como los programadores.</p>
+                                <p class="dialogue assistant">(Presenta las tarjetas de flechas, mostrándolas una por una).</p>
+                                <p class="dialogue assistant">Un robot no entiende palabras como 'camina para allá'. ¡No! Entiende un lenguaje especial, un lenguaje de flechas. Esta flecha <strong>(muestra la de 'Adelante')</strong> significa 'Da un paso grande hacia adelante'. Esta <strong>(muestra 'Girar a la Derecha')</strong> significa 'Gira tu cuerpo hacia la ventana'. Y esta <strong>(muestra 'Girar a la Izquierda')</strong> significa 'Gira tu cuerpo hacia la puerta'. ¡Este es el único idioma que nuestros robots entienden hoy!</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ¡A Programar en el Mundo Real! ⏰ 12 minutos</h3>
+                            <p>(El facilitador explica las reglas y los roles del juego y los divide en parejas).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ahora, ¡la misión! <strong>(Señala el objeto en el Punto B)</strong>. Ese es el tesoro perdido. Nuestra misión es programar a nuestro robot para que vaya desde el 'Punto de Inicio' hasta el tesoro. ¡Vamos a trabajar en parejas! Uno será el <strong>Programador</strong>, ¡el cerebro del equipo!, y el otro será el <strong>Robot</strong>, ¡el que se mueve!</p>
+                                <p class="dialogue assistant">Atención, programadores, esta es la regla más importante: no pueden hablarle a su robot. ¡Nada! Solo pueden darle las instrucciones <strong>antes</strong> de que empiece a moverse. Tienen que poner las tarjetas de flechas en el suelo, en el orden exacto. A esto le llamamos crear una <strong>SECUENCIA</strong>. Una vez que su secuencia esté lista en el suelo, el robot puede empezar a moverse, siguiendo cada tarjeta, una por una.</p>
+                                <p class="dialogue assistant">(El facilitador hace una demostración rápida).</p>
+                                <p class="dialogue assistant">Por ejemplo: si pongo <strong>Adelante</strong>, <strong>Adelante</strong>, <strong>Girar a la Derecha</strong>, <strong>Adelante</strong>... el robot dará dos pasos, girará y dará un paso más. ¡Y no puede hacer nada que no esté en las tarjetas!</p>
+                                <p class="dialogue assistant">(Los niños se ponen en parejas y comienzan. El facilitador camina entre ellos, guiando y narrando).</p>
+                                <p class="dialogue assistant">¡Veo a los programadores pensando mucho! ¡Creando sus secuencias! ¡El robot está listo para recibir sus comandos! ... ¡Oh, oh! ¡Parece que ese robot chocó contra una mesa! ¡No pasa nada! Programadores, es momento de <strong>depurar</strong>. Revisen su secuencia de tarjetas. ¿Quizás pusieron un 'Adelante' cuando necesitaban un 'Girar'? ¡Intenten de nuevo! ¡Los mejores inventores son los que no se rinden!</p>
+                                <p class="dialogue assistant"><strong>⭐ Tip del Gnius Coach:</strong> Fomenta activamente la idea de "depurar" como algo divertido y normal. El objetivo no es que lo hagan perfecto a la primera, sino que entiendan la relación causa-efecto entre su secuencia de instrucciones y el resultado del movimiento del robot. Asegúrate de que las parejas cambien de rol para que todos experimenten ser Programador y Robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Reflexión de la Misión ⏰ 3 minutos</h3>
+                            <p>(Reúne al grupo de nuevo y haz preguntas para consolidar el aprendizaje).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Misión cumplida, equipos! ¡Lo hicieron increíble! Quiero preguntarles algo... ¿Qué pasaba si el Programador ponía las tarjetas en el orden incorrecto? (Deja que respondan). ¡Exacto! ¡El robot se perdía o chocaba! El orden de las instrucciones es súper, súper, súper importante. La palabra mágica que aprendimos hoy es <strong>SECUENCIA</strong>. Dar instrucciones en el orden correcto. ¡Felicidades, ahora piensan como programadores!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Creando un Baile Secreto ⏰ 15 minutos</h2>
+                <p>Aplicar el concepto de secuencia para crear algo más complejo y creativo: un algoritmo de baile.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Receta del Baile ⏰ 5 minutos</h3>
+                            <p>(El facilitador presenta el siguiente desafío con una nueva analogía).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Ya son expertos en secuencias. Ahora vamos a crear algo llamado <strong>algoritmo</strong>. ¡Es una palabra de científico loco, pero es muy fácil! Un algoritmo es simplemente una receta. Como la receta para hacer galletas, que te dice paso a paso qué hacer. Pues hoy... ¡vamos a crear la receta para un baile secreto!</p>
+                                <p class="dialogue assistant">(Divide al grupo en equipos de 3 o 4 niños y entrégales una hoja grande y marcadores).</p>
+                                <p class="dialogue assistant">En su equipo, van a inventar un baile de 3 o 4 pasos. Puede ser cualquier cosa: un aplauso, un salto, un giro, una cara graciosa... ¡lo que quieran! Y luego, tienen que escribir la 'receta' de su baile en la hoja, pero sin usar palabras. Usen dibujos y símbolos. ¡Una estrella para un salto, unas manos para un aplauso! ¡Sean creativos!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ¡El Desafío del Baile! ⏰ 8 minutos</h3>
+                            <p>(Una vez que los equipos terminan su "receta", se la intercambian con otro equipo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, coreógrafos! Ahora viene el verdadero desafío. ¡Van a intercambiar su receta secreta con otro equipo! Su misión ahora es leer la receta del otro equipo y tratar de hacer su baile secreto exactamente como ellos lo inventaron. Si los programadores hicieron un buen trabajo con sus dibujos, ¡el baile debería salir perfecto!</p>
+                                <p class="dialogue assistant">(Los equipos intentan descifrar y realizar el baile del otro. El salón se llenará de risas y movimiento).</p>
+                                <p class="dialogue assistant"><strong>⭐ Tip del Gnius Coach:</strong> Camina y observa. Si un equipo está confundido, acércate y di: <em>"¡Mmm, interesante! Equipo de programadores, ¿creen que su dibujo fue lo suficientemente claro? Quizás para la próxima, un dibujo diferente podría funcionar mejor."</em> Esto enseña sobre la importancia de la claridad en las instrucciones sin culpar a nadie.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: El Baile de Todos ⏰ 2 minutos</h3>
+                            <p>(El facilitador elige uno de los bailes y lo hace con todo el grupo).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Me encantó el baile del equipo verde! ¡Su receta fue muy clara! ¿Qué les parece si lo bailamos todos juntos? ¡A la cuenta de tres! Uno... dos... tres... (Realizan el baile todos juntos). ¡Fantástico! ¡Crearon un algoritmo y funcionó!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: Conectando la Magia ⏰ 5 minutos</h2>
+                <p>Crear el momento "¡Aha!" al conectar todo el juego físico con la herramienta digital que usarán.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conectando el Mundo Real con el Digital ⏰ 5 minutos</h3>
+                            <p>(El facilitador pide a todos que se sienten y miren el proyector. Abre ScratchJr).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Genios, acérquense. Quiero mostrarles un último secreto. Todo lo que hicimos hoy, jugar al robot, crear secuencias con flechas, inventar recetas de baile... todo eso, sin tocar una sola computadora... es <strong>exactamente</strong> lo que hacemos en nuestro taller digital.</p>
+                                <p class="dialogue assistant">(Arrastra un bloque de 'avanzar' azul y lo une al bloque de 'bandera verde').</p>
+                                <p class="dialogue assistant">Miren esto. ¿Recuerdan nuestras tarjetas de flechas? <strong>(Señala el bloque azul)</strong> ¡Aquí están! ¡Son los bloques de movimiento! Cuando yo pongo un bloque de 'avanzar'...</p>
+                                <p class="dialogue assistant">(Arrastra un bloque de 'girar' y lo pone después).</p>
+                                <p class="dialogue assistant">...y luego un bloque de 'girar', ¿qué estoy creando en la pantalla? (Deja que los niños griten la respuesta). ¡SÍ! ¡Una <strong>SECUENCIA</strong>! ¡Un <strong>ALGORITMO</strong>! ¡Una receta para nuestro personaje!</p>
+                                <p class="dialogue assistant">(Presiona la bandera verde y el gato se mueve).</p>
+                                <p class="dialogue assistant">¡Y cuando presiono la bandera verde, el personaje sigue mi receta! ¡Exactamente como lo hicieron nuestros robots humanos! Ya no necesitan tener miedo de estos bloques, porque ustedes ya saben lo que significan. Ya saben pensar como programadores. En nuestra próxima misión, ustedes serán los que crearán estas secuencias para dar vida a sus personajes. ¡Están más que listos! ¡Felicidades, programadores!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
